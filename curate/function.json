@@ -1,0 +1,28 @@
+{
+  "scriptFile": "__init__.py",
+  "bindings": [
+    {
+      "name": "recordsclean",
+      "type": "blobTrigger",
+      "direction": "in",
+      "path": "data/cleaned/records_clean.json",
+      "connection": "AzureWebJobsStorage"
+    },
+    {
+      "name": "records",
+      "type": "blob",
+      "dataType": "binary",
+      "direction": "out",
+      "path": "data/curated/records.json",
+      "connection": "AzureWebJobsStorage"
+    },
+    {
+      "name": "embeddings",
+      "type": "blob",
+      "dataType": "binary",
+      "direction": "out",
+      "path": "data/curated/embeddings.json",
+      "connection": "AzureWebJobsStorage"
+    }
+  ]
+}

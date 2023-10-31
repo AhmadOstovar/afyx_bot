@@ -1,0 +1,23 @@
+{
+    "EMBEDDING_MODEL": "text-embedding-ada-002",
+    "ENCODING": "cl100k_base",
+    "MAX_SECTION_LEN": 2048,
+    "DEFAULT_MAXIMUM_CONTENT_LENGTH": 1024,
+    "QUERY_RECORD_SIMILARITY_CUTOFF": 0.75,
+    "REFERENCES_LIMIT": 5,
+    "SEPARATOR": "\n* ",
+    "PRE_PROMPT": "Your name is AFRY X Bot, you are a helpful AI assistant.",
+    "COMPLETIONS_API_PARAMS": {
+        "model": "text-davinci-003",
+        "temperature": 0.0,
+        "max_tokens": 300,
+        "frequency_penalty": 0,
+        "presence_penalty": 0,
+        "user": "testuser"
+    },
+    "CHATBOT_API_PARAMS": {
+        "model": "gpt-3.5-turbo",
+        "temperature": 0.0,
+        "max_tokens": 300
+    }
+}
